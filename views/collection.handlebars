@@ -1,0 +1,41 @@
+
+<div class="row">
+            <div class="col">
+                <h1 class="font login-title">My Collections</h1>
+            </div>
+        </div>
+     {{!-- feed for Books based on User.id --}}
+       <div class="book-zone d-flex flex-wrap flex-row bd-highlight justify-content-center align-items-start mb-3 p-3">
+  {{#each userBooks as | book |}}
+      <div class="card book-info m-3 p-3 flex-sm-grow-1" id="{{@index}}" style="width: 30%;">
+        <p style="font-size: x-small;">Result {{@index}}/6</p>
+        <div class="text-center">
+          {{#if book.thumbnail}}
+        <img src="{{book.thumbnail}}" class="card-img-top" alt="book cover for {{book.title}}" style="width: 130px;"/>
+          {{else}}
+            <img src="/images/placeholder-cover2.png" class="card-img-top" alt="book cover for {{book.title}}" style="width: 130px;"/>
+        {{/if}}
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-center">{{book.title}}</h3>
+          {{#each book.authors as |author|}}
+          <h6>{{author}}</h6>
+          {{/each}}
+          <p class="card-text" style="font-size:smaller;">{{book.description}}</p>
+        </div>
+    </div>
+        {{/each}} 
+        </div>
+           {{!-- Comment Feed (future development)
+            <div class="col-md-7">
+                 {{#each comments as |comment|}}
+                <p>
+                    {{book.comments}}
+                </p>
+                 <p>
+                    Book Comments
+                </p>
+                {{/each}}
+            </div>
+        </div> --}}
+

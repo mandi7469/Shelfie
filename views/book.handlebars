@@ -1,0 +1,36 @@
+{{!-- properties of target Book object should be rendered in body --}}
+{{!-- generated through bookPageRoutes --}}
+{{!-- {{#each Book as |Book|}} --}}
+
+<div class="row">
+            <div class="col container">
+                <h1 class="font login-title">Shelfie</h1>
+                
+                <h2 class="font signup-title">{{title}}</h2>
+                <h4 class="font signup-title">Written By: {{authors}}</h4>
+                {{#if thumbnail}}
+                <img class="cover-img" src="{{thumbnail}}" alt="">
+                {{else}}
+                <img class="cover-img" src="/images/placeholder-cover2.png" alt="A cover image for this book could not be found">
+                {{/if}}
+                <p>{{description}}</p>
+                <h5>Published on: {{publishedDate}}</h5>
+                <h5>Page Count: {{pageCount}}</h5>
+            </div>
+             {{!-- "add book to collection" button --}}
+            <div class="add-book-button">
+          <button type="submit" class="btn btn-light mt-3 mb-3 add-book " id="add-book">Add Book to Collection &#8853;</button>
+        {{!-- </div>
+            {{!-- comments feed --}}
+            <div>
+            <h3>Comments</h3>
+            <ul>
+                {{#each Comment}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            </div>
+        </div> --}}
+    {{!-- {{/each}} --}}
+
+{{!-- <script src="/js/bookApi.js"></script> --}}

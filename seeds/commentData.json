@@ -1,0 +1,52 @@
+[
+    {
+      "text": "This is a really insightful post!",
+      "user_id": 3,
+      "book_id": 1
+    },
+    {
+      "text": "I totally agree with the points made here.",
+      "user_id": 7,
+      "book_id": 2
+    },
+    {
+      "text": "Thanks for sharing this information!",
+      "user_id": 12,
+      "book_id": 3
+    },
+    {
+      "text": "I found this article very helpful.",
+      "user_id": 5,
+      "book_id": 4
+    },
+    {
+      "text": "Can someone explain this in more detail?",
+      "user_id": 9,
+      "book_id": 5
+    },
+    {
+      "text": "Great perspective! This was an interesting read.",
+      "user_id": 14,
+      "book_id": 1
+    },
+    {
+      "text": "I have some questions about the methodology.",
+      "user_id": 2,
+      "book_id": 7
+    },
+    {
+      "text": "This topic is more complex than I initially thought.",
+      "user_id": 11,
+      "book_id": 9
+    },
+    {
+      "text": "I appreciate the effort put into this post.",
+      "user_id": 8,
+      "book_id": 10
+    },
+    {
+      "text": "Looking forward to more content like this!",
+      "user_id": 1,
+      "book_id": 3
+    }
+  ]
